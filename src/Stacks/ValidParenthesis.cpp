@@ -8,21 +8,21 @@ bool isValid(string s) {
         if(it == '(' || it == '{' || it == '[') {
             st.push(it);
         } else {
-        if(st.empty()) 
+        if(st.empty()) // if string is "]{}" now there is closing bracket first so it checks if opening is present for it in stack and if stack is empty return false
         return false;
         char ch = st.top();
         st.pop();
         if((it == ')' && ch == '(')  || (it == '}' && ch == '{') || (it == ']' && ch == '[')) continue;
         else return false;   
         }
-
     }
     return st.empty();
 }
 
 int main()
 {
-    string s="{()[[{}()]]}";
+    // string s="{()[[{}()]]}";
+      string s="]{}[";
     if(isValid(s))
     cout << "True" << endl;
     else
