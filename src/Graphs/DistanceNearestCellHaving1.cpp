@@ -20,7 +20,7 @@ class Solution {
                     vis[i][j] = 1;
                 }
                 else {
-                    vis[i][j] = 0; // mark visted matrixn as 0 
+                    vis[i][j] = 0; // mark visted matrix as 0 
                 }
             }
         }
