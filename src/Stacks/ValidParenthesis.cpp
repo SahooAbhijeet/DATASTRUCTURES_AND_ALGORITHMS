@@ -28,3 +28,6 @@ int main()
     else
     cout << "False" << endl;
 }
+
+// T.C -> O(N)
+//  S.C -> O(N)
