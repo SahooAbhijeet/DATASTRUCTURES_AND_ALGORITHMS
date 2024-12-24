@@ -35,6 +35,8 @@ int optimal(int arr[], int n) {
         if (arr[i] > largest) {
             slargest = largest;
             largest = arr[i];
+        } else if (arr[i] > slargest && arr[i] != largest) {
+            slargest = arr[i];
         }
     }
     return slargest;

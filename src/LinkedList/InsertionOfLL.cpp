@@ -49,14 +49,14 @@ using namespace std;
             return new Node(val);
         }
         Node* temp = head;
-        while(temp -> next != NULL){
+        while(temp -> next != NULL) {
             temp = temp -> next;
         }
            Node* newNode = new Node(val);
            temp -> next = newNode;
            return head;
     }
-    int main() {
+    int main() {  
     vector<int> arr = {2,4,6,8,5};
     Node* head = convertArrayToLinkedList(arr);
     head = insertHead(head, 1);
