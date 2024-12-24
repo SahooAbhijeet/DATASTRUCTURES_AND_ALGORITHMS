@@ -49,7 +49,7 @@ using namespace std;
             return new Node(val);
         }
         Node* temp = head;
-        while(temp -> next != NULL){
+        while(temp -> next != NULL) {
             temp = temp -> next;
         }
            Node* newNode = new Node(val);

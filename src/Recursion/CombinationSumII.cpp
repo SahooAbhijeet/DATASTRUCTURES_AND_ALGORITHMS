@@ -26,7 +26,7 @@ class Solution {
 };
 int main() {
     vector<int> nums = {1,2,2};
-    int target = 4;
+    int target = 2;
     Solution obj;
     vector<vector<int>> ans = obj.combinationSumII(nums,target);
 

@@ -15,7 +15,7 @@ class Solution {
 
 int main() {
     Solution obj;
-    int n = 123456;
+    int n = 1234567;
     cout << obj.reverse(n);
     return 0;
 }

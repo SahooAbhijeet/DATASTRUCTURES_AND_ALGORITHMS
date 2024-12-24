@@ -9,7 +9,7 @@ class Solution {
             return;
         }
         for (int i = 0; i < nums.size(); i++) {
-            if (!freq[i]) {
+            if (freq[i] != 1) { // element i is not present in frequency array
                 ds.push_back(nums[i]);
                 freq[i] = 1;
                 findPermutation(nums, ans, freq, ds);
