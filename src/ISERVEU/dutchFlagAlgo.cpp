@@ -21,8 +21,8 @@ void sortArray(vector<int>& arr, int n) {
                 mid++;
         }
     }
-    
 }
+
 int main()
 {
     int n = 6;
